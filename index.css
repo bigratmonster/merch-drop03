@@ -79,3 +79,31 @@ section#pics { overflow: visible; }
     #title { font-size: 3em;}
     #description { margin-top: 0.5ch; margin-left: 0.6ch;}
 }
+
+/* view */
+.card {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.product-img {
+    width: 16em;
+    aspect-ratio: 3/4;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5;
+    cursor: pointer;
+
+    border-radius: 10px;
+    border: dashed black 2px;
+}
+.product-img:hover { transform: scale(1.01); }
+.card > p:hover { cursor: pointer; }
+
+.merch-row {
+    display: flex; flex-direction: row; gap: 50px; scroll-behavior: smooth; overflow-x: scroll; overflow-y: hidden;
+}
