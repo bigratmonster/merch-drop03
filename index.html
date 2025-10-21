@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Big Rat Merch &lt;3</title>
+        <meta charset="utf-8">
+        <meta name="title" content="Big Rat Merch &lt;3" />
+        <meta name="description" content="SOCRATICA Chapter of Philadelphia" />
+        <meta name="theme-color" content="#e83b3b" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"/>
+
+        <link rel="stylesheet" href="./global.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./style.css">
+	</head>
+    <style>
+        .card {
+            padding: 2em 0;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none !important;
+            color: inherit;
+        }
+
+        .product-img {
+            width: 16em;
+            aspect-ratio: 3/4;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #e5e5e5;
+            cursor: pointer;
+
+            border-radius: 10px;
+            border: dashed black 2px;
+        }
+        .product-img:hover { transform: scale(1.01); }
+        .card > p:hover { cursor: pointer; }
+
+        .merch-row {
+            display: flex; flex-direction: row; gap: 50px; scroll-behavior: smooth; overflow-x: scroll; overflow-y: hidden;
+        }
+
+        /* Solar Collection */
+        .tee-solar { background-image: url('assets/view/tee_solar.avif'); }
+        .tee-solar:hover { background-image: url('assets/view/tee_solar_rot.avif'); }
+
+        .hoodie-solar { background-image: url('assets/view/hoodie_solar.avif'); }
+        .hoodie-solar:hover { background-image: url('assets/view/hoodie_solar_rot.avif'); }
+
+        .pillow-solar { background-image: url('assets/view/pillow_solar.avif'); }
+
+        /* Lunar Collection */
+        .tee-lunar { background-image: url('assets/view/tee_lunar.avif'); }
+        .tee-lunar:hover { background-image: url('assets/view/tee_lunar_rot.avif'); }
+
+        .hoodie-lunar { background-image: url('assets/view/hoodie_lunar.avif'); }
+        .hoodie-lunar:hover { background-image: url('assets/view/hoodie_lunar_rot.avif'); }
+
+        .pillow-lunar { background-image: url('assets/view/pillow_lunar.avif'); }
+    </style>
+
+	<body style="padding: 25px 35px;">
+         <section id="home" class="pure-g" style="z-index: 3;">
+            <div class="pure-u-1-8" style="display: flex; flex-direction: column; justify-content: center;"><img src="/assets/rat_solar.png" style="max-width: 60px; object-fit: contain; image-rendering:optimizeQuality;"></div>
+            <div class="pure-u-3-4"><!-- formatting div --></div>
+            <div class="pure-u-1-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <p style="text-align: right;" class="hide-mobile">
+                    <a href="#home">Home</a> | 
+                    <a href="#shop">Shop</a> | 
+                    <a href="#pics">Pics</a>
+                </p>
+            </div>
+            <div class="pure-u-md-1-1" style="height: 20px;"></div>
+
+
+            <div class="pure-u-md-1-8" style="display: flex; flex-direction: column;">
+                <p>Bigrat Merch</p>
+            </div>
+            <div class="pure-u-md-7-8"><!-- formatting div --></div>
+            <div class="pure-u-md-1-8" style="display: flex; flex-direction: column;">
+                <p class="hide-mobile">A <a>bigrat.monster</a><br>innovation</p>
+            </div>
+            <div class="pure-u-md-3-8">
+                <p>After five years, Fistbowl's returns to design more bigrat merch. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <p>Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <p><a href="https://bigrat.monster" target="_blank">Learn More</a></p>
+            </div>
+            <div class="pure-u-md-1-2"></div>
+         </section>
+         
+         <section id="shop" class="pure-g">
+            <div class="pure-u-md-1-8">
+                <p><br>Solar Collection</p>
+                <div class="emblem" style="mask-image: url('/assets/emblem_solar.png');"></div>
+            </div>
+            <div class="pure-u-7-8">
+                <div class="merch-row">
+                    <a href="https://bigrat-shop.fourthwall.com/products/solar-rat-tee" target="_blank" class="card">
+                        <div class="product-img tee-solar"></div>
+                        <p>Solar Tee<br>$20.50</p>
+                    </a>
+                    <a href="https://bigrat-shop.fourthwall.com/products/solar-rat-hoodie" target="_blank" class="card">
+                        <div class="product-img hoodie-solar"></div>
+                        <p>Solar Hoodie<br>$29.99</p>
+                    </a>
+                    <!-- <div class="card">
+                        <img src="dummy/solar.png">
+                        <p>Solar Sticker<br>$100.00</p>
+                    </div> -->
+                    <a href="https://bigrat-shop.fourthwall.com/products/solar-rat-pillow" target="_blank" class="card">
+                        <div class="product-img pillow-solar"></div>
+                        <p>Solar Pillow<br>$21.99</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pure-u-md-1-8">
+                <p><br>Lunar Collection</p>
+                <div class="emblem" style="mask-image: url('/assets/emblem_lunar.png');"></div>
+            </div>
+            <div class="pure-u-7-8">
+                <div class="merch-row">
+                    <a href="https://bigrat-shop.fourthwall.com/products/lunar-rat-tee" target="_blank" class="card">
+                        <div class="product-img tee-lunar"></div>
+                        <p>Lunar Tee<br>$20.50</p>
+                    </a>
+                    <a href="https://bigrat-shop.fourthwall.com/products/lunar-rat-hoodie" target="_blank" class="card">
+                        <div class="product-img hoodie-lunar"></div>
+                        <p>Lunar Hoodie<br>$29.99</p>
+                    </a>
+                    <!-- <div class="card">
+                        <img src="dummy/lunar.png">
+                        <p>Lunar Sticker<br>$100.00</p>
+                    </div> -->
+                    <a href="https://bigrat-shop.fourthwall.com/products/lunar-rat-pillow" target="_blank" class="card">
+                        <div class="product-img pillow-lunar"></div>
+                        <p>Lunar Pillow<br>$21.99</p>
+                    </a>
+                </div>
+            </div>
+
+         </section>
+
+        <section id="pics" class="pure-g">
+            #Pics section: these come later...
+            <!-- <div style="display: flex; justify-content: flex-end; width: 100%;">
+              
+                <div
+                    class="polaroid"
+                    style="transform: rotate(-20deg) translate(-50%, -15%);"
+                >
+                    <div id="shell" class="no-select">
+                        <img src="dummy/finale.png" style="width: 400px;">
+                        <small>@handle</small>
+                    </div>
+                </div>
+
+                <div
+                    class="polaroid"
+                    style="transform: rotate(30deg) translate(-90%, 40%);"
+                >
+                    <div id="shell" class="no-select">
+                        <img src="dummy/mic.png" style="width: 400px;">
+                        <small>@elawonger</small>
+                    </div>
+                </div>
+            </div> -->
+         </section>
+            
+            
+         <footer>
+            <p class="center">Designs by <a href="https://twitch.tv/fistbowl" target="_blank">Ela</a>, Website by <a href="https://vivime.info" target="_blank">Vish</a><br><a href="https://bigrat.monster" target="_blank">bigrat.monster</a> originally created by <a href="https://www.sonothing.com/" target="_blank">SoNothing</a></p>
+         </footer>
+
+    </body>
+</html>

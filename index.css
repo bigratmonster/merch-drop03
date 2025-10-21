@@ -1,0 +1,81 @@
+#home:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    --scale: 4;
+    background: #b0b0b01c; /*#b0b0b012; */
+    mask: linear-gradient(20deg, transparent 50%, white),
+    url('assets/pattern.png') repeat;
+    mask-size: auto, calc(256px * var(--scale)) calc(144px * var(--scale));
+    mask-position: 50% 50%, 100% 50%;
+    mask-composite: intersect;
+
+    top: 0;
+    left: 0;
+    transform-style: flat;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.emblem {
+    width: 7em;
+    height: 7em;
+    background-color: #daafaf;
+    mask: url('about:blank') center/contain no-repeat;
+}
+
+.polaroid {
+    animation: polaroid-in 0.6s ease-out forwards;
+    /* transform: rotate(-20deg) translate(100%, 30%); */
+    cursor: pointer;
+    opacity: 100; /* 0 */
+}
+
+.polaroid > div { transition: transform 0.3s; }
+.polaroid > div:not(:hover) { transform: perspective(1000px) rotateY(0deg); }
+.polaroid > div:hover { transform: perspective(1000px) rotateY(10deg); }
+
+.polaroid > div > img { transition: filter 0.3s ease-in-out; }
+.polaroid > div:hover > img { filter: drop-shadow(-4px 8px 3px #00000022);  }
+
+.polaroid > div > small { transition: filter 0.3s ease-in-out; }
+.polaroid > div:hover > small { filter: drop-shadow(-1px 3px 3px #00000022); }
+
+.polaroid > div > img { width: 25em; }
+
+.polaroid > div > small {
+    position: absolute;
+    display: block;
+    top: 35em;
+    left: 16em;
+}
+
+/* animations */
+@keyframes polaroid-in_ {
+    0% { 
+        transform: rotate(50deg) translate(10%, 80%); 
+    }
+    20% { opacity: 0; }
+    25% { opacity: .6; }
+    100% { 
+        transform: rotate(5deg) translate(10%, 5%);
+        opacity: 1; 
+    }
+}
+
+/* mobile considerations */
+section { overflow: hidden; }
+section#pics { overflow: visible; }
+
+@media all and (max-width: 600px) {
+    .polaroid { transform: rotate(5deg) translate(-50%, 10%); }
+    @keyframes polaroid-in_ {
+        0% { opacity: 0; }
+        20% { opacity: 0.4; }
+        100% { transform: rotate(5deg) translate(-30%, 10%) ; opacity: 1;} 
+    }
+    #header { padding-top: 5em;}
+    #title { font-size: 3em;}
+    #description { margin-top: 0.5ch; margin-left: 0.6ch;}
+}
